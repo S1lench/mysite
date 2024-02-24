@@ -1,0 +1,2 @@
+# mysite
+Maded for fun
