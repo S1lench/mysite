@@ -1,25 +1,22 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>S1lench Prodaction</title>
-  <title>BRADENGELHARDT</title>
   <meta name="description" content="Web designer and front-end developer">
-  <link rel=”icon” href=”/favico.ico” type=”image/x-icon”>
+  <link rel="icon" href="/favico.ico" type="image/x-icon">
   <link href='https://fonts.googleapis.com/css?family=Raleway:100,200,400,600' rel='stylesheet' type='text/css'>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'><link rel="stylesheet" href="./style.css">
-
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+  <link rel="stylesheet" href="./style.css">
 </head>
-<body>
-<!-- partial:index.partial.html -->
 <body>
   <!-- navbar header -->
   <div class="nav-header">
     <div class="nav-brand">
-      <img src=https://i.pinimg.com/564x/28/2a/58/282a58a3e6f7d5a640fc94ed83733602.jpg>
+      <img src="https://i.pinimg.com/564x/28/2a/58/282a58a3e6f7d5a640fc94ed83733602.jpg">
     </div>
     <i class="fa fa-bars fa-3x"></i>
     <div class="header-links" style="opacity: 0.2;">
@@ -48,11 +45,8 @@
   <!-- end navbar slider -->
 
   <!-- begin fullpage -->
-
   <div id="fullpage">
-
     <!-- begin section -->
-
     <div class="section aboutme" data-anchor="aboutme">
       <div class="opaque-bg animated fadeInDown">
         <h1 style="color:purple">S1lench<span</h1>
@@ -63,11 +57,10 @@
     <!-- end section -->
 
     <!-- begin section -->
-
     <div class="section" data-anchor="skills">
       <div class="content">
-        <h1 class="wow fadeInDown"style="color:purple" data-wow-delay="0.2s">ABOUT ME</h1>
-        <p class="wow fadeInDown" data-wow-delay="0.2s">Hi, my name is S1lench. I'm beginer designer and back-end developer</p>
+        <h1 class="wow fadeInDown" style="color:purple" data-wow-delay="0.2s">ABOUT ME</h1>
+        <p class="wow fadeInDown" data-wow-delay="0.2s">Hi, my name is S1lench. I'm beginner designer and back-end developer</p>
 
         <div class=" wow fadeInUp container-skillbar" data-wow-delay="0.2s">
           <div class="skillbar clearfix " data-percent="55%">
@@ -99,7 +92,6 @@
     <!-- end section -->
 
     <!-- begin section -->
-
     <div class="section" data-anchor="projects">
       <div class="content-slide">
         <div class="slide">
@@ -111,14 +103,12 @@
           <h1>PYTHON</h1>
           <p>Education</p>
           <img data-src="https://i.postimg.cc/hGm9wDf1/image.png">
-        
         </div>
       </div>
     </div>
     <!-- end section -->
 
     <!-- begin section -->
-
     <div class="section" data-anchor="contact">
       <div class="content wow fadeInDown" data-wow-delay="0.2s">
         <h1>CONTACT ME</h1>
@@ -129,19 +119,19 @@
           <div id="form-messages"></div>
           <form id="ajax-contact" method="post" role="form" action="contact.php" data-toggle="validator">
             <div class="form-group has-feedback wow fadeInLeft" data-wow-delay="0.6s">
-              <input type="text" class="form-control" id="name" name="name" placeholder="NAME" data-error="Field can't be blank!" required>
+              <input type="text" class="form-control" id="name" name="name" placeholder="NAME" autocomplete="name" data-error="Field can't be blank!" required>
               <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
               <div class="help-block with-errors"></div>
             </div>
 
             <div class="form-group has-feedback wow fadeInRight" data-wow-delay="0.8s">
-              <input type="email" class="form-control" id="email" name="email" placeholder="EMAIL" data-error="Field can't be blank!" required>
+              <input type="email" class="form-control" id="email" name="email" placeholder="EMAIL" autocomplete="email" data-error="Field can't be blank!" required>
               <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
               <div class="help-block with-errors"></div>
             </div>
 
             <div class="form-group has-feedback wow fadeInLeft" data-wow-delay="1s">
-              <textarea data-minlength="10" class="form-control" id="message" name="message" placeholder="MESSAGE" data-error="Minimum of 10 characters" required></textarea>
+              <textarea data-minlength="10" class="form-control" id="message" name="message" placeholder="MESSAGE" autocomplete="message" data-error="Minimum of 10 characters" required></textarea>
               <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
               <div class="help-block with-errors"></div>
             </div>
@@ -160,7 +150,6 @@
     <!-- end section -->
 
     <!-- begin section -->
-
     <div class="section fp-auto-height">
       <div class="footer">
         <p>CONNECT WITH ME</p>
@@ -173,12 +162,12 @@
 
   </div>
   <!-- end fullpage -->
-</body>
+
 <!-- partial -->
-  <script src='https://code.jquery.com/jquery-2.1.1.min.js'></script>
+<script src='https://code.jquery.com/jquery-2.1.1.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.js'></script><script  src="./script.js"></script>
-
+<script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.js'></script>
+<script  src="./script.js"></script>
 </body>
 </html>
