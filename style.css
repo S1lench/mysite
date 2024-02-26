@@ -205,8 +205,8 @@ p {
 }
 
 .aboutme {
-  background: url("https://gas-kvas.com/uploads/posts/2023-02/1675448649_gas-kvas-com-p-chernii-fonovii-risunok-rabochego-33.jpg")
-    no-repeat;
+  background: url("https://www.fulige.com/wp-content/uploads/2021/02/tupo.gif") 
+  no-repeat;
   background-size: cover;
 }
 
@@ -403,7 +403,7 @@ p {
 
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
-  background: rgba(0, 0, 0, 0.62) !important;
+  background: purple !important;
 }
 
 /* contact us styles */
