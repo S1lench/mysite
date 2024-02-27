@@ -11,6 +11,7 @@
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="style.css"> <!-- Стили для контактной формы -->
 </head>
 <body>
   <!-- navbar header -->
@@ -49,7 +50,7 @@
     <!-- begin section -->
     <div class="section aboutme" data-anchor="aboutme">
       <div class="opaque-bg animated fadeInDown">
-        <h1 style="color:purple">S1lench<span</h1>
+        <h1 style="color:purple">S1lench<span></span></h1>
         <p><span id="holder"></span><span class="blinking-cursor">|</span></p>
       </div>
       <i id="moveDown" class="fa fa-chevron-down fa-3x bounce"></i>
@@ -59,8 +60,8 @@
     <!-- begin section -->
     <div class="section" data-anchor="skills">
       <div class="content">
-        <h1 class="wow fadeInDown" style="color:purple" data-wow-delay="0.2s">ABOUT ME</h1>
-        <p class="wow fadeInDown" data-wow-delay="0.2s">Hi, my name is S1lench. I'm beginner designer and back-end developer</p>
+        <h1 class="wow fadeInDown"style="color:purple" data-wow-delay="0.2s">ABOUT ME</h1>
+        <p class="wow fadeInDown" data-wow-delay="0.2s">Hi, my name is S1lench. I'm beginer designer and back-end developer</p>
 
         <div class=" wow fadeInUp container-skillbar" data-wow-delay="0.2s">
           <div class="skillbar clearfix " data-percent="55%">
@@ -115,35 +116,22 @@
         <p>Whether you're interested in working with me or just want to say hello, I'd love to hear from you!</p>
         <br>
         <div class="contact-form">
-
           <div id="form-messages"></div>
-          <form id="ajax-contact" method="post" role="form" action="contact.php" data-toggle="validator">
-            <div class="form-group has-feedback wow fadeInLeft" data-wow-delay="0.6s">
-              <input type="text" class="form-control" id="name" name="name" placeholder="NAME" autocomplete="name" data-error="Field can't be blank!" required>
-              <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
-              <div class="help-block with-errors"></div>
+          <form id="contact-form" method="post" action="process.php">
+            <div class="form-group">
+              <h4><div class="input-label">Your Name:</div></h4>
+              <input type="text" id="name" name="name" autocomplete="name" required>
             </div>
-
-            <div class="form-group has-feedback wow fadeInRight" data-wow-delay="0.8s">
-              <input type="email" class="form-control" id="email" name="email" placeholder="EMAIL" autocomplete="email" data-error="Field can't be blank!" required>
-              <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
-              <div class="help-block with-errors"></div>
+            <div class="form-group">
+              <h4><div class="input-label">Your Email:</div></h4>
+              <input type="email" id="email" name="email" autocomplete="email" required>
             </div>
-
-            <div class="form-group has-feedback wow fadeInLeft" data-wow-delay="1s">
-              <textarea data-minlength="10" class="form-control" id="message" name="message" placeholder="MESSAGE" autocomplete="message" data-error="Minimum of 10 characters" required></textarea>
-              <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
-              <div class="help-block with-errors"></div>
+            <div class="form-group">
+              <h4><div class="input-label">Your Message:</div></h4>
+              <textarea id="message" name="message" autocomplete="message" required></textarea>
             </div>
-
-            <div class="hidden">
-              <input type="text" class="form-control" id="human" name="human" placeholder="">
-            </div>
-            <div class="wow fadeInUp" data-wow-delay="1s">
-              <button type="submit" id="submit" name="submit" class="btn btn-lg">SEND MESSAGE</button>
-            </div>
+            <button type="submit" id="submit-btn">Send Message</button>
           </form>
-          <br>
         </div>
       </div>
     </div>
